@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<style type="text/css">
+		body{
+			margin: 0;
+			color: white;
+			font: 15px/1.5 Arial, Helvetica,sans-serif;
+			background: #f1f1f1;
+		}
+		h1{
+			float: left;
+			font-size: 25px;
+			margin-top: 10px;
+			margin-left: 20px;
+			font-weight: 300;
+		}
+		nav{
+			margin-top: -5px;
+			float: right;
+			font-size: 20px;
+			color: white;
+			margin-right: 20px;
+		}
+
+		nav ul li{
+			display: inline-block;
+			margin-left: 10px;
+		}
+		.clear{
+			clear: both;
+		}
+		.wallpaper{
+		background-image: url("background2.jpg");
+		background-size: cover;
+		background-position: top;
+		height: 520px;
+		background-attachment: fixed;
+		background-repeat: no-repeat;
+		overflow: hidden;
+		
+		}
+		.wallpaper h2{
+			text-align: center;
+			padding-top: 150px;
+			font-size: 40px;
+		}
+		.services1{
+			float: left;
+			width: 30%;
+			text-align: center;
+			padding: 10px;
+		}
+		.container1{
+			margin-left: 5%;
+			color: black;
+		}
+		@media screen and (max-width: 495px){
+		.wallpaper h2{
+			font-size: 5px;
+			font-weight: 200;
+			margin-top: -10px;
+		}
+		h1{
+			font-size: 15px;
+			float: none;
+			text-align: center;
+		}
+		nav{
+			font-size: 20px;
+			float: none;
+			text-align: center;
+		}
+		.services1{
+			float: none;
+			width: 90%;
+		}
+	}
+		@media screen and (max-width: 650px){
+		.wallpaper h2{
+			font-size: 30px;
+			font-weight: 200;
+		}
+		h1{
+			font-size: 20px;
+		}
+		nav{
+			margin-top: -10px;
+			font-size: 20px;
+		}
+		.services1{
+			float: none;
+			width: 90%;
+		}
+	}
+	</style>
+	<title>Services</title>
+
+</head>
+<body>
+	<div class="wallpaper">
+	<h1 id="demo"></h1>
+	<nav>
+		<ul>
+			<li>Home</li>
+			<li>Services</li>
+			<li>About Us</li>
+		</ul>
+	</nav>
+	<h2>JC's Security Services</h2>
+	</div>
+	<div class="container1">
+	<div class="services1">
+	<h3>Camera</h3>
+	<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas malesuada luctus auctor. Morbi iaculis sem felis, id egestas dui mollis nec. Phasellus vehicula facilisis facilisis. Praesent laoreet, orci vel imperdiet mattis, lectus ex hendrerit turpis, a tincidunt magna quam ac nisl. Praesent non turpis vel lorem fermentum euismod</p>
+	</div>
+	<div class="services1">
+	<h3>Wireless</h3>
+	<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas malesuada luctus auctor. Morbi iaculis sem felis, id egestas dui mollis nec. Phasellus vehicula facilisis facilisis. Praesent laoreet, orci vel imperdiet mattis, lectus ex hendrerit turpis, a tincidunt magna quam ac nisl. Praesent non turpis vel lorem fermentum euismod</p>
+	</div>
+	<div class="services1">
+	<h3>Remote Access</h3>
+	<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas malesuada luctus auctor. Morbi iaculis sem felis, id egestas dui mollis nec. Phasellus vehicula facilisis facilisis. Praesent laoreet, orci vel imperdiet mattis, lectus ex hendrerit turpis, a tincidunt magna quam ac nisl. Praesent non turpis vel lorem fermentum euismod</p>
+	</div>
+	</div>
+	<script type="text/javascript">
+		var today = new Date()
+var hourNow = today.getHours();
+var greeting;
+
+if (hourNow > 18) {
+  greeting = "Good Evening Visitor";
+} else if (hourNow > 12) {
+  greeting = "Good Afternoon Visitor";
+} else if (hourNow > 0) {
+  greeting = "Good Morning Visitor";
+} else {
+  greeting = "Welcome Visitor";
+}
+  document.getElementById("demo").innerHTML = greeting;
+	</script>
+</body>
+</html>
